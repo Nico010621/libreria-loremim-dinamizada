@@ -1,0 +1,18 @@
+ <h3 class="cont-navs">Aprovecha las ofertas de la semana</h3>
+<section class="estruct-card">
+
+<div class="estruct-card">
+    <% ofertas.forEach(oferta=> { %>
+        <div class="Card">
+            <img class="imgCard" src="<%=oferta.imagen%>" alt="">
+            <h5 class="cont-card"><%-oferta.name%></h5>
+            <button class="precios-cards"> $300.00</button>
+        </div>
+        <% }) %>
+</div>
+
+</section> 
+                
+
+
+

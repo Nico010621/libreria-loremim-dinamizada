@@ -1,0 +1,635 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: auto;
+    font-family: 'Mate SC', serif;
+    background-color: #eee;
+}
+a{
+    text-decoration:none;
+}
+
+/* PORTADA */
+.header {
+    background-color: #DEC0F1 ;   /*  #DEC0F1  #6B4E71  #361D2E #957FEF  */
+   
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.nav-link {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+.nav-logo {
+    display: flex;
+    font-size: 18px;
+    font-weight: bold;
+    margin: auto;
+    line-height: 40px;
+}
+.logo-header{
+    width: 40px;
+    height: 40px;
+    margin: auto;
+    border-radius: 6px;
+}  
+.nav-menu {
+    display: flex;
+    margin-right: 30px;
+    list-style: none;
+    margin-bottom: 0px;
+    align-items: center;
+}
+.nav-menu-item {
+    font-size: 14px;
+    margin: 0 10px;
+    line-height: 50px;
+    text-transform: uppercase;
+    width: max-content;
+}
+.nav-menu-link {
+  padding: 8px 12px;
+  border-radius: 3px;
+}
+.nav-menu-link:hover,
+.nav-menu-link_active {
+  background-color: white;
+  transition: 0.5s;
+}
+.open-quienes-somos{
+    border: none;
+    background-color: #DEC0F1;
+}
+.nav-toggle {
+    color: white;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+    cursor: pointer;
+    display: none;
+}
+
+/* TOGGLE */
+.nav-toggle {
+    color: white;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+    cursor: pointer;
+    display: none;
+}
+.portada{
+    background-image: url("/img/Img/fondo_de_portada.png");
+    background-size: cover;
+}
+
+.cont-portada{
+    width: 45%;
+    text-align: center;
+    padding: 7%;
+}
+.contact-port{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* MODAL QUIENES SOMOS */
+.modal-container-quienesSomos{
+    width: 50%;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: fixed;
+    opacity: 0;
+    height: 600px; 
+    overflow: auto;
+    pointer-events: none;
+    z-index:5;
+}      
+.modal-quienesSomos{
+   border-radius: 5px;
+   background-color: white;
+   text-align: center;
+   margin: auto;
+   }
+.show-quienesSomos{
+    pointer-events: auto;
+    opacity: 1;
+}
+.open{
+    font-size: 14px;
+    display: flex;
+    justify-content: space-around;
+    border: none;
+    background-color: transparent;
+}
+.header-modal{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 12px;
+    border-bottom: 1px solid black;
+}
+.button-emerg{
+    background: none;   
+    border: none;
+}  
+.parraf-about{
+    width: 95%;
+    margin: auto;
+    font-size: 18px
+}
+.titulo-modal{
+    font-size: 30px;
+}
+.subtitulos-modal{
+    font-size: 20px;
+}
+/*MODAL CONTACTO */ 
+.modal-container-contacto{
+    width: 90%;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: fixed;
+    opacity: 0;
+    pointer-events: none;
+}
+.contactos-modal{
+    margin: 10px 20px;
+}
+.modal-contacto{
+    border-radius: 5px;
+    background-color: white;
+    text-align: center;
+    margin: auto;
+}
+.show-contacto{
+    pointer-events: auto;
+    opacity: 1;
+}
+.open-contacto{
+    font-size: 14px;
+    display: flex;
+    justify-content: space-around;
+    border: none;
+    background-color: transparent;
+    }
+ .header-modal{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 12px;
+    border-bottom: 1px solid black;
+}
+.button-emerg{
+    background: none;   
+    border: none;
+}  
+.titulo-modal{
+    font-size: 30px;
+}
+.subtitulos-modal{
+    font-size: 26px;
+}
+.links-contactos{
+    font-size: 30px;
+}   
+.separacion{
+    margin-right: 5px;
+}
+/* Diseño de las Navbar */
+.cont-navs{
+   font-size: 50px;
+   text-align: center;
+   border-bottom: 1px solid black;
+   max-width: 70%;
+   margin: auto;
+   padding-top: 8px;
+   margin-bottom: 10px;
+} 
+/* Diseño de cards de categorias" */
+.categorias{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    text-align: center;
+}
+.box-categorias{
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.jfc-sw{
+    justify-content: space-between;
+}
+.jfc-cen{
+    justify-content: center;
+}    
+.icon-categories{
+    width: 140px;
+    padding-top: 5px;
+}
+.zoom{
+    transition: 1s ease-out;
+  }
+.zoom:hover{
+    transform: scale(1.1);
+  }
+/*  Cards de Dtos. y Produc Destacados */
+.estruct-card{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    
+}
+.Card{
+   border: 2px solid white;
+   text-align: center;
+   padding-top: 10px;
+   margin: 7px;
+   background-color: white;
+   border-radius: 8px;
+}
+.imgCard{
+   margin: auto;
+   height: 200px;
+   width: 240px;
+}
+.cont-card{
+   font-size: 20px;
+}
+.precios-cards{
+   font-size: 20px;
+   border: 1px solid #DEC0F1 ;
+   background-color: #DEC0F1;
+   margin-bottom: 5px;
+}
+/*  Metodos de Pagos */
+.estructura-pagos{
+    background-color: white;
+    margin-bottom: 10px ;
+}
+.metoPagos{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.pagos{
+    width: 190px;
+    text-align: center;
+ }
+ .pagos1{
+    display: flex;
+    align-items: center;
+ }
+  /*  Footer */
+ footer{
+     background-color: white;
+     margin: 0px;
+ }   
+ .container-footer{
+     max-width: 55%;
+     margin: 0 auto;
+     display: flex;
+ }
+ .bloque-footer{
+     text-align: center;
+     margin-right: 12px;
+     margin-top: 15px;
+     display: flex;
+     text-align: center;
+ }
+ .logo-foot{
+     width: 40px;
+     height: 40px;
+ }
+ .bloque2-footer{
+     text-align: center;    
+     margin-top: 20px;
+ }
+ .bloque3-footer{
+     margin-left: 10px;
+     margin-right: 10px;
+ }
+ .bloque4-footer{
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+     margin-left: 8px;
+     margin-top: 25px;
+ }
+ .tf-bloque4{
+     margin-bottom: 5px;
+     list-style: none;
+ }
+ /*  Footer */
+ .f-size-20{
+    font-size: 20px;
+    list-style: none;
+    text-align: center;
+ }
+ .f-size-30{
+    font-size: 30px;
+ }
+ .f-size-50{
+    font-size: 50px;
+ }
+ .f-size-13{
+    font-size: 13px;
+ }
+ .f-size-15{
+    font-size: 15px;
+ }
+
+ /*MODAL CONTACTO */ 
+.modal-container-productos{
+  
+  /* width: 300px;     Responsive*/
+  width: 50%;
+   
+    margin: auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+   
+}
+.img-modal-productos{
+    margin: 0 20px;
+}
+
+.modal-productos{
+    border-radius: 5px;
+    background-color: white;
+    text-align: center;
+    margin: auto;
+}
+  
+.parrafo-modal-producto{
+    width: 95%;
+    font-size: 20px;
+}
+.cont-modal-productos{
+   display: flex;
+}
+.imagen-modal{
+    display: flex;
+}
+.contenido-texto-modal{
+    display: flex;
+    flex-direction: column;
+}
+    
+
+
+ 
+ 
+ /****************************************************  Sitio Resposive **********************************************************/
+ /****************************************************  Sitio Resposive **********************************************************/
+ @media (max-width: 967px) {
+ *{
+        box-sizing: border-box;
+    }
+body{
+    margin: 0 auto;
+    align-items: center;
+}
+/* PORTADA */
+.portada{
+    background-image: url("/img/Img/port-responsive.png");
+    background-size: cover; 
+    width: 100%;
+}
+.titulo-Nav{
+   font-size: 12px
+}
+.quienes-somos{
+    font-size: 12px;
+}
+.logo-inic{
+    width: 20px;
+}
+.titles-nav{
+    font-size: 14px;
+     margin-right: 2px;
+} 
+.header {
+     height: 60px;
+}
+ .logo {
+    font-size: 15px;
+    padding: 0 20px;
+    line-height: 60px;
+}
+.nav-menu {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    background-color: #DEC0F1;
+    position: fixed;
+    z-index:5;
+    top: 60px;
+    width: 100%;
+    padding: 20px 0;
+    height: calc(100% - 60px);
+    overflow-y: auto;
+    left: 100%;
+    transition: left 0.3s;
+}
+.nav-menu-item {
+    line-height: 70px;
+    margin-bottom: 15px;
+}
+  
+.nav-menu-link:hover,
+.nav-menu-link_active {
+    background: none;
+    color: black;
+}
+.nav-toggle {
+    display: block;
+}
+.nav-menu_visible {
+left: 0;
+}
+  
+.nav-toggle:focus:not(:focus-visible) {
+    outline: none;
+}
+.cont-portada{
+    width: 85%;
+    margin-left: 2px;
+    padding-left: 1px;
+}
+.medios-cont{
+    max-width: 100%;
+}
+.img-port{
+    max-width: 80%;
+}
+  
+.titles-port{
+    font-size: 25px;
+}
+/* MODAL SOBRE NOSOTROS */
+.modal-container{
+    display: flex;
+    margin-top: 10px;
+    width: 98%;
+    height: 500px; 
+    overflow: auto;
+    position: fixed;
+    z-index:6;
+}
+.open{
+      font-size: 14px;
+      width: 100%;
+      margin-bottom: 18px;
+}
+.parraf-about{
+    width: 95%;
+    margin: auto;
+    font-size: 20px
+}
+.titulo-modal{
+    font-size: 24px;
+}
+.subtitulos-modal{
+    font-size: 18px;
+}
+/* MODAL CONTACTO*/ 
+.modal-container-contacto{
+    width: 98%;
+    z-index:5;
+    margin-top: 10px;
+}
+.modal-contacto{
+    width: 98%;
+    margin: auto;
+}
+.open-contacto{
+    font-size: 14px;
+    width: 100%;
+}
+.links-contactos{
+    font-size: 20px;
+}
+/* Diseño de las Navbar  */
+.cont-navs{
+    font-size: 30px;
+    padding-top: 6px;
+    max-width: 100%;
+} 
+/* Diseño de cards de categorias" */
+.categorias{
+    width: 100%;
+    margin: 1px;
+    padding: 5px;
+    font-size: 12px;
+}
+.box-categorias{
+    height: 60%;
+    width: 45%;
+    margin: auto;
+}
+.jfc-sw{
+    justify-content: space-between;
+}
+.jfc-cen{
+    justify-content: center;
+}    
+.icon-categories{
+    width: 80px;
+    padding-top: 5px;
+  }
+/*  Cards de Dtos. y Produc Destacados */
+.estruct-card{
+    display: flex;
+    justify-content: center;
+     flex-direction: column;  
+}
+.imgCard{
+    margin: auto;
+    height: 200px;
+     width: 240px;
+}
+.cont-card{
+    font-size: 20px;
+}
+/*  Metodos de Pagos */
+.pagos{
+    max-width: 45%;
+    text-align: center;
+    margin: auto;
+}
+.metoPagos{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    max-width: 100%;
+}    
+.pagos1{
+    width: 100%;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid black;
+}
+.img-pagos{
+    width: 35px;
+}
+.img-pagos1{
+    width: 55px;
+}     
+/*  Footer */
+.container-footer{
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+}
+.logo-foot{
+    width: 20px;
+    height: 20px;
+}
+.titulo-Nav{
+    font-size: 15px;
+}
+.bloque-footer{
+    display: flex;
+    align-items:center;
+    font-size: 16px;
+}
+.bloque2-footer{
+    text-align: center;    
+    margin-top: 5px;
+}
+.mapa{
+    max-width: 99%;
+}
+.bloque4-footer{
+    display: flex;
+}
+.tf-bloque4{
+    margin-bottom: 5px;
+    font-size: 10px;
+}
+} 
